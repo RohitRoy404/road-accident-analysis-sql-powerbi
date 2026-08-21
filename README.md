@@ -12,7 +12,7 @@ The project focuses on identifying accident patterns, severity trends, high-risk
 
 ### 🔗 Interactive Dashboard
 
-👉 **[Open Interactive US Road Accident Dashboard](report/US_Road_Accident_Dashboard.html)**
+👉 [🚀 Open Interactive US Road Accident Dashboard](https://rohitroy404.github.io/us-road-accident-analysis-sql-dashboard/US_Road_Accident_Dashboard.html)
 
 ---
 
