@@ -8,7 +8,7 @@ The project focuses on identifying accident patterns, severity trends, high-risk
 
 ## 📊 Dashboard Preview
 
-![US Road Accident Dashboard](images/dashboard.png)
+![US Road Accident Dashboard](Report.png)
 
 ### 🔗 Interactive Dashboard
 
