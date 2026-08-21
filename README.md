@@ -147,7 +147,7 @@ The analysis identifies several important patterns:
 ## 📂 Project Structure
 
 ```text
-road-accident-analysis-sql-powerbi/
+us-road-accident-analysis-sql-dashboard
 │
 ├── sql/
 │   ├── 01_database_creation.sql
