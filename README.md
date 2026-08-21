@@ -154,16 +154,11 @@ road-accident-analysis-sql-powerbi/
 │   ├── 02_data_cleaning.sql
 │   └── 03_business_analysis.sql
 │
-├── python/
-│   └── export_accident_analysis.py
-│
-├── report/
-│   └── US_Road_Accident_Dashboard.html
-│
-├── images/
-│   └── dashboard.png
-│
-└── README.md
+├── README.md
+├── Report.png
+├── US_Accident_Analysis.xlsx
+└── US_Road_Accident_Dashboard.html
+└── export_accident_analysis.py
 ```
 
 ---
