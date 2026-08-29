@@ -4,14 +4,6 @@
 
 SELECT COUNT(ID),AVG(accident_duration_minutes) FROM accidents_clean;
 -- 500000	40.2577
-
--- Severity Distribution
-SELECT Severity,COUNT(ID) AS total,ROUND(COUNT(ID) * 100.0 / (SELECT COUNT(ID) FROM accidents_clean),2) AS Percentage_contribution
- FROM accidents_clean GROUP BY Severity ORDER BY Severity DESC;	
-
--- What percentage of accidents are severe accidents (Severity 3 and 4 combined)?
- WITH cte AS(SELECT Severity,COUNT(ID),ROUND(COUNT(*) * 100.0 / (SELECT COUNT(*) FROM accidents_clean),2) AS Percentage_contribution
- FROM accidents_clean GROUP BY Severity ORDER BY Severity DESC LIMIT 2) SELECT SUM(Percentage_contribution) FROM cte;
  
  -- Which hour of the day has the most accidents?
  SELECT accident_hour,COUNT(ID) AS accident_count FROM accidents_clean GROUP BY accident_hour ORDER BY accident_count DESC LIMIT 1 ;
