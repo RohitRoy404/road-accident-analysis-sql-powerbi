@@ -45,16 +45,6 @@ SELECT weather_condition,ROUND(AVG(accident_duration_minutes),2) FROM accidents_
 GROUP BY weather_condition
 ORDER BY ROUND(AVG(accident_duration_minutes),2) DESC;
 
--- Which states have the highest percentage of severe accidents?
-SELECT 
-State,
-COUNT(ID) AS total_accidents,
-SUM(Severity >= 3) AS severe_accidents,
-ROUND(SUM(Severity >= 3) * 100.0 / COUNT(ID),2) AS severe_ratio
-FROM accidents_clean
-GROUP BY State
-ORDER BY severe_ratio DESC
-LIMIT 10;
 
 -- Accident trend by year
 SELECT * FROM accidents_clean;
