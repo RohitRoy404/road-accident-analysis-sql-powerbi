@@ -58,12 +58,6 @@ UPDATE accident_raw SET Pressure= NULL WHERE Pressure=0.00;
  SELECT MIN(Precipitation), MAX(Precipitation) FROM accident_raw;
  SELECT COUNT(Precipitation) FROM accident_raw WHERE Precipitation>5;
  
- -- Distance Duration
-  WITH CTE AS (
- SELECT TIMESTAMPDIFF(MINUTE,Start_Time,End_Time) AS Duration FROM accident_raw )
- SELECT COUNT(Duration) FROM CTE WHERE Duration>1440;
- 
- SELECT COUNT(*) FROM accident_raw WHERE Start_Time=End_Time;
  
  -- Geographic Validation
  
